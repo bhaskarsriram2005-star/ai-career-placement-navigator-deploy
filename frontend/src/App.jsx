@@ -2,7 +2,6 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-
 import Dashboard from "./components/Dashboard";
 import ReadinessAnalytics from "./components/ReadinessAnalytics";
 import StudentProfile from "./components/StudentProfile";
@@ -25,7 +24,7 @@ function App() {
 
         <div className="main-content">
           <div className="hero">
-            <h1>AI Career & Placement Navigator</h1>
+            <h1>🚀 AI Career & Placement Navigator</h1>
             <p>
               Track your profile, skills, internships, placements,
               certifications and analyze your career readiness with AI-powered

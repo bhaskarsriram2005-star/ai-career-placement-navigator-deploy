@@ -271,4 +271,13 @@ ol {
     width: 100%;
     margin: 6px 0;
   }
+  .skill-pill {
+  display: inline-block;
+  background-color: #e6f0ff;
+  color: #1e40af;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: 600;
+}
 }

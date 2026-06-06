@@ -12,7 +12,10 @@ function Skills() {
   }, []);
 
   const addSkill = async () => {
-    if (name.trim() === "") return;
+    if (name.trim() === "") {
+      alert("Enter a skill");
+      return;
+    }
 
     const response = await fetch("http://localhost:8080/api/skills", {
       method: "POST",
@@ -40,11 +43,13 @@ function Skills() {
 
       <button onClick={addSkill}>Add Skill</button>
 
-      <ul>
+      <div style={{ marginTop: "20px" }}>
         {skills.map((skill) => (
-          <li key={skill.id}>{skill.name}</li>
+          <span key={skill.id} className="skill-pill">
+            {skill.name}
+          </span>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
